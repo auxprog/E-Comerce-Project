@@ -21,7 +21,7 @@ public class Producto {
 	private double precio;
 	private int cantidad;
 	
-	@ManyToOne
+	@ManyToOne(cascade = {CascadeType.ALL})
 	private Cliente usuario;
 
 	public Producto(Long id, String nombre, String descripcion, String imagen, double precio, int cantidad,

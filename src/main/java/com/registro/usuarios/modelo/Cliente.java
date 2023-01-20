@@ -40,7 +40,7 @@ public class Cliente implements Serializable {
 	@Temporal(TemporalType.DATE)
 	private Date createAt;
 
-	@OneToMany
+	@OneToMany(cascade = {CascadeType.ALL})
 	private List<Producto> producto;
 	
 	@OneToMany(mappedBy = "usuario")

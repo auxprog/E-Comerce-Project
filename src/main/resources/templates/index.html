@@ -36,16 +36,16 @@
         <li class="nav-item dropdown"><a
           class="nav-link dropdown-toggle" href="#"
           id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false"> ADMIN </a>
+          aria-haspopup="true" aria-expanded="false" sec:authentication="principal.username"> </a>
           <div class="dropdown-menu"
           aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#"><form th:action="@{/logout}" method="post">
         <input type="submit" class="btn btn-info" value="Logout" />
     </form>
 </a> <a
-          class="dropdown-item" th:href="@{/Productos}">Vender</a> <a
-          class="dropdown-item" href="#">Usuarios</a> <a
-          class="dropdown-item" href="#">Salir</a>
+          class="dropdown-item" th:href="@{/Productos}">sell</a> <a
+          class="dropdown-item" href="#">help</a> <a
+          class="dropdown-item" href="#">Settings</a>
         </div></li>
       </ul>
     </div>
@@ -69,86 +69,89 @@
 
        
      <!-- Swiper -->
+      
     <div class="swiper-container">
+   
         <div class="swiper-wrapper">
+        
             <div class="swiper-slide" style="background-image:url(css/img/01.jpg)">
                 <div class="info">
-                    <h5>Omor Faruk <br> <span>Web Developer</span></h5>
+                    <h5>Computer Gamer<br> <span>Next Week</span></h5>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image:url(css/img/02.jpg)">
                 <div class="info">
-                    <h5>Omor Faruk <br> <span>Web Developer</span></h5>
+                    <h5>Laptop Gamer<br> <span>Next Week</span></h5>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image:url(css/img/03.jpg)">
                 <div class="info">
-                    <h5>Omor Faruk <br> <span>Web Developer</span></h5>
+                    <h5>Iphone 12 pro max <br> <span>Next Week</span></h5>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image:url(css/img/04.jpg)">
                 <div class="info">
-                    <h5>Omor Faruk <br> <span>Web Developer</span></h5>
+                    <h5>iphone 13 <br> <span>Next Week</span></h5>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image:url(css/img/05.jpg)">
                 <div class="info">
-                    <h5>Omor Faruk <br> <span>Web Developer</span></h5>
+                    <h5>MacBoock  <br> <span>Next Week</span></h5>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image:url(css/img/06.jpg)">
                 <div class="info">
-                    <h5>Omor Faruk <br> <span>Web Developer</span></h5>
+                    <h5>Samsung S21 <br> <span>v</span></h5>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image:url(css/img/07.jpg)">
                 <div class="info">
-                    <h5>Omor Faruk <br> <span>Web Developer</span></h5>
+                    <h5>tv Samsung <br> <span>Next Week</span></h5>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image:url(css/img/08.jpg)">
                 <div class="info">
-                    <h5>Omor Faruk <br> <span>Web Developer</span></h5>
+                    <h5>Mouse Gamer <br> <span>Next Week</span></h5>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image:url(css/img/09.jpg)">
                 <div class="info">
-                    <h5>Omor Faruk <br> <span>Web Developer</span></h5>
+                    <h5>KeyBoard <br> <span>Next Week</span></h5>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image:url(css/img/10.jpg)">
                 <div class="info">
-                    <h5>Omor Faruk <br> <span>Web Developer</span></h5>
+                    <h5>Iphone 14 pro max <br> <span>Next Week</span></h5>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image:url(css/img/11.jpg)">
                 <div class="info">
-                    <h5>Omor Faruk <br> <span>Web Developer</span></h5>
+                    <h5>ipad 11 pro max <br> <span>Next Week</span></h5>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image:url(css/img/12.jpg)">
                 <div class="info">
-                    <h5>Omor Faruk <br> <span>Web Developer</span></h5>
+                    <h5>Gamer chair <br> <span>Next Week</span></h5>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image:url(css/img/13.jpg)">
                 <div class="info">
-                    <h5>Omor Faruk <br> <span>Web Developer</span></h5>
+                    <h5>steering wheel <br> <span>Next Week</span></h5>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image:url(css/img/14.jpg)">
                 <div class="info">
-                    <h5>Omor Faruk <br> <span>Web Developer</span></h5>
+                    <h5>Microphone <br> <span>Next Week</span></h5>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image:url(css/img/15.jpg)">
                 <div class="info">
-                    <h5>Omor Faruk <br> <span>Web Developer</span></h5>
+                    <h5>Apple Watch <br> <span>Next Week</span></h5>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image:url(css/img/16.jpg)">
                 <div class="info">
-                    <h5>Omor Faruk <br> <span>Web Developer</span></h5>
+                    <h5>Gamer headset <br> <span>Next Week</span></h5>
                 </div>
             </div>
         </div>
@@ -162,7 +165,7 @@
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
         <h1 class="display-3">Welcome to Spring Ecommerce 2021</h1>
-        <p class="lead">Tu tienda de productos en Línea</p>
+        <p class="lead">Your online product store</p>
       </header>
 
       <!-- Page Features -->
@@ -175,7 +178,7 @@
               <p class="card-text" th:text="${producto.nombre}"></p>
             </div>
             <div class="card-footer">
-              <a th:href="@{/ver/{id}  (id=${producto.id})  }" class="btn btn-success">Ver producto</a>
+              <a th:href="@{/ver/{id}  (id=${producto.id})  }" class="btn btn-success">View Products</a>
             </div>
           </div>
         </div>

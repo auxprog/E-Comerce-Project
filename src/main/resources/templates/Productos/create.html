@@ -22,91 +22,71 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Spring eCommerce</a>
+      <a class="navbar-brand" th:href="@{/}">Spring eCommerce</a>
 
-      <form class="form-inline my-2 my-lg-0" method="post"
-      action="#">
-      <input class="form-control mr-sm-2" type="search"
-      placeholder="Buscar" aria-label="Search" name="nombre"
-      autocomplete="off">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-    </form>
+     
 
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown"><a
-          class="nav-link dropdown-toggle" href="#"
-          id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false"> ADMIN </a>
-          <div class="dropdown-menu"
-          aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Productos</a> <a
-          class="dropdown-item" href="#">Ordenes</a> <a
-          class="dropdown-item" href="#">Usuarios</a> <a
-          class="dropdown-item" href="#">Salir</a>
-        </div></li>
-      </ul>
-    </div>
+  
   </div>
 </nav>
 
+<br>
+<br>
+<br>
 <!-- Page Content -->
 <div class="container">
 
 
   <!-- Page Heading/Breadcrumbs -->
   <h1 class="mt-4 mb-3">
-    Spring eCommerce <small>Productos</small>
+    Spring eCommerce <small>Products</small>
   </h1>
 
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    <li class="breadcrumb-item active">Crear Productos</li>
+    <li class="breadcrumb-item"><a th:href="@{/}">Home</a></li>
+    <li class="breadcrumb-item active">Create Product</li>
   </ol>
 
-  <h2>Crear Producto</h2>
+  <h2>Create Product</h2>
   <form class="form-horizontal" th:action="@{/Productos/save}" method="post" enctype="multipart/form-data">
     <div class="form-group">
-      <label class="control-label col-sm-2" for="nombre">Nombre:</label>
+      <label class="control-label col-sm-2" for="nombre">Name:</label>
       <div class="col-sm-10">
         <input type="text" class="form-control" id="nombre" name="nombre"
-        placeholder="Ingrese el nombre del producto" autocomplete="off" required>
+        placeholder="Enter product name" autocomplete="off" required>
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label col-sm-2" for="descripcion">Descripción:</label>
+      <label class="control-label col-sm-2" for="descripcion">Description:</label>
       <div class="col-sm-10">
         <textarea class="form-control" id="descripcion" name="descripcion"
-        placeholder="Ingrese la descripcion del producto" required
+        placeholder="Enter the Description of the product" required
         autocomplete="off"> </textarea>
       </div>
     </div>
 
     <div class="form-group">
-      <label class="control-label col-sm-2" for="cantidad">Cantidad:</label>
+      <label class="control-label col-sm-2" for="cantidad">Quantity:</label>
       <div class="col-sm-10">
         <input type="number" class="form-control" id="cantidad"
-        name="cantidad" placeholder="Ingrese la cantidad del producto"
+        name="cantidad" placeholder="Enter the quantity of the product"
         required autocomplete="off">
       </div>
     </div>
 
     <div class="form-group">
-      <label class="control-label col-sm-2" for="precio">Precio:</label>
+      <label class="control-label col-sm-2" for="precio">Price:</label>
       <div class="col-sm-10">
         <input type="number" class="form-control" step="any" id="precio" name="precio"
-        placeholder="Ingrese el precio del producto" autocomplete="off" required>
+        placeholder="Enter the price of the product" autocomplete="off" required>
       </div>
     </div>
 
     <div class="form-group">
-      <label class="control-label col-sm-2" for="img">Imagen:</label>
+      <label class="control-label col-sm-2" for="img">Image:</label>
       <div class="col-sm-10">
         <input type="file" class="form-control-file" id="img" name="img">
       </div>
@@ -114,8 +94,8 @@
 
     <div class="row">
       <div class="col-sm-2">
-        <button type="submit" class="btn btn-success">
-          <span class="glyphicon glyphicon-saved"></span> Guardar
+        <button type="submit" class="btn btn-info">
+          <span class="glyphicon glyphicon-saved"></span> Save
         </button>
       </div>
     </div>
@@ -126,9 +106,9 @@
 <!-- /.container -->
 
 <!-- Footer -->
-<footer class="py-5 bg-dark">
+<footer class="py-5 bg-secondary">
   <div class="container">
-    <p class="m-0 text-center text-white">Copyright &copy; Spring eCommerce 2020</p>
+    <p class="m-0 text-center text-white">Copyright &copy; Spring eCommerce 2023</p>
   </div>
   <!-- /.container -->
 </footer>

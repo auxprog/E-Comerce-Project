@@ -22,45 +22,30 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Spring eCommerce</a>
+      <a class="navbar-brand text-danger" href="#">Products.com</a>
 
-      <form class="form-inline my-2 my-lg-0" method="post"
-      action="#">
-      <input class="form-control mr-sm-2" type="search"
-      placeholder="Buscar" aria-label="Search" name="nombre"
-      autocomplete="off">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-    </form>
+     
 
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link"
-          href="carrito.html">Carrito</a></li>
-          <li class="nav-item"><a class="nav-link"
-            href="login.html">Login</a></li>
-          </ul>
-        </div>
       </div>
     </nav>
 
+<br>
+<br>
+<br>
     <!-- Page Content -->
     <div class="container">
 
 
       <!-- Page Heading/Breadcrumbs -->
       <h1 class="mt-4 mb-3">
-        Spring eCommerce <small>Producto</small>
+        Spring eCommerce <small>Product</small>
       </h1>
 
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active">Producto</li>
+        <li class="breadcrumb-item active">Product</li>
       </ol>
 
       <!-- Blog Post -->
@@ -79,18 +64,18 @@
                <input type="hidden" th:value="${producto.id}" name="id">
                
                 <ul class="list-group">
-                  <li class="list-group-item"><h5 th:text="'Precio: '+${producto.precio}"></h5></li>
+                  <li class="list-group-item"><h5 th:text="'Price: '+${producto.precio}"></h5></li>
                   <li class="list-group-item">
-                    <p th:text=" 'Descripcion: '+ ${producto.descripcion}"></p>
+                    <p th:text=" 'Description: '+ ${producto.descripcion}"></p>
                   </li>
                   <li class="list-group-item"><h6>
-                    Cantidad: <input type="number" id="cantidad" name="cantidad" autocomplete="off"
+                    Qantity: <input type="number" id="cantidad" name="cantidad" autocomplete="off"
                     min="1" max="5" value="1">
                   </h6></li>
                 </ul>
 
 
-                <button type="submit"  class="btn btn-dark">Añadir al carrito </button>
+                <button type="submit"  class="btn btn-dark">add to Cart </button>
 
               </form>
             </div>
@@ -103,9 +88,9 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5 bg-secondary">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Spring eCommerce 2020</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Spring eCommerce 2023</p>
       </div>
       <!-- /.container -->
     </footer>

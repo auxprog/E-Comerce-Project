@@ -22,65 +22,44 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Spring eCommerce</a>
+      <a class="navbar-brand text-danger" href="#">Products.com</a>
 
-      <form class="form-inline my-2 my-lg-0" method="post"
-      action="#">
-      <input class="form-control mr-sm-2" type="search"
-      placeholder="Buscar" aria-label="Search" name="nombre"
-      autocomplete="off">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-    </form>
+      
 
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown"><a
-          class="nav-link dropdown-toggle" href="#"
-          id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false"> ADMIN </a>
-          <div class="dropdown-menu"
-          aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Productos</a> <a
-          class="dropdown-item" href="#">Ordenes</a> <a
-          class="dropdown-item" href="#">Usuarios</a> <a
-          class="dropdown-item" href="#">Salir</a>
-        </div></li>
-      </ul>
-    </div>
+   
   </div>
 </nav>
-
+<br>
+<br>
+<br>
 <!-- Page Content -->
-<div class="containe bg-dark-subtle">
+<div class="containe  ">
 
 
   <!-- Page Heading/Breadcrumbs -->
   <h1 class="mt-4 mb-3">
-    Spring eCommerce <small>Productos</small>
+    Spring eCommerce <small>Products</small>
   </h1>
 
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a th:href="@{/}">Home</a></li>
-    <li class="breadcrumb-item active">Ver Productos</li>
+    <li class="breadcrumb-item active">View Products</li>
   </ol>
 
-  <a class="btn btn-primary" th:href="@{Productos/create}" > Crear Producto</a>
-  <h2>Productos</h2>
+  <a class="btn btn-primary" th:href="@{Productos/create}" > Create Product</a>
+  <h2>Products</h2>
   <table class="table">
     <thead>
       <tr>
-        <th scope="col">Nombre</th>
-        <th scope="col">Descripción</th>
-        <th scope="col">Cantidad</th>
-        <th scope="col">Precio</th>
-        <th scope="col">Acción</th>
-        <th scope="col">Acción</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Qantity</th>
+        <th scope="col">Price</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
       </tr>
     </thead>
     <tbody>
@@ -89,8 +68,8 @@
         <td th:text="${producto.descripcion}" ></td>
         <td th:text="${producto.cantidad}"></td>
         <td th:text="${producto.precio}"></td>
-        <td><a  class="btn btn-warning" th:href="@{Productos/edit/{id} (id=${producto.id}) }" >Editar</a> </td>
-        <td><a  class="btn btn-danger" th:href="@{Productos/delete/{id} (id=${producto.id}) }">Eliminar</a> </td>
+        <td><a  class="btn btn-info" th:href="@{Productos/edit/{id} (id=${producto.id}) }" >Edit</a> </td>
+        <td><a  class="btn btn-danger" th:href="@{Productos/delete/{id} (id=${producto.id}) }">Delete</a> </td>
       </tr>       
     </tbody>
   </table>
@@ -99,9 +78,9 @@
 <!-- /.container -->
 
 <!-- Footer -->
-<footer class="py-5 bg-dark">
+<footer class="py-5 bg-secondary">
   <div class="container">
-    <p class="m-0 text-center text-white">Copyright &copy; Spring eCommerce 2020</p>
+    <p class="m-0 text-center text-white">Copyright &copy; Spring eCommerce 2023</p>
   </div>
   <!-- /.container -->
 </footer>
