@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns:th="https://www.thymeleaf.org">
 
 <head>
 
@@ -24,29 +24,10 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Spring eCommerce</a>
+      <a class="navbar-brand text-red" th:href="@{/}">Productos.com</a>
 
-      <form class="form-inline my-2 my-lg-0" method="post"
-      action="#">
-      <input class="form-control mr-sm-2" type="search"
-      placeholder="Buscar" aria-label="Search" name="nombre"
-      autocomplete="off">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-    </form>
+     
 
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link"
-          href="carrito.html">Carrito</a></li>
-          <li class="nav-item"><a class="nav-link"
-            href="login.html">Login</a></li>
-          </ul>
-        </div>
-      </div>
     </nav>
 
     <!-- Page Content -->
@@ -90,11 +71,11 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                     <td >Nombre</td>
-                     <td >Precio</td>
-                     <td>Cantidad</td>
-                     <td >Total</td>
+                    <tr th:each="dtoorden: ${cart}">
+                     <td th:text="${dtoorden.nombre}"></td>
+                     <td th:text="${dtoorden.precio}"></td>
+                     <td th:text="${dtoorden.cantidad}"></td>
+                     <td th:text="${dtoorden.total}"></td>
 
                    </tr>
                  </tbody>
@@ -109,7 +90,7 @@
           <h2 class="card-title">Resumen Orden</h2>
 
           <ul class="list-group">
-            <li class="list-group-item"><h5> Total:</h5></li>
+            <li class="list-group-item"><h5 th:text=" 'Total: '+ ${orden.total} "></h5></li>
             <a href="#" class="btn btn-dark">Generar</a>
           </ul>
         </div>

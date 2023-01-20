@@ -142,7 +142,11 @@ public class ListarController {
 	}
 	
 	@GetMapping(value="/order")
-	public String Rorden() {
+	public String Rorden(Model model) {
+		
+		model.addAttribute("cart", detalles);
+		model.addAttribute("orden", orden);
+		
 		return"Productos/resumenorden";
 	}
 	
