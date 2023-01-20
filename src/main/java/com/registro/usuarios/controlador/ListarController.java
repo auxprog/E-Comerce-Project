@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+import javax.servlet.http.HttpSession;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -126,6 +128,16 @@ public class ListarController {
 		model.addAttribute("cart", detalles);
 		model.addAttribute("orden", orden);
 
+		return "Productos/carrito";
+	}
+	
+	@GetMapping("/getCart")
+	public String getCart(Model model) {
+		
+		model.addAttribute("cart", detalles);
+		model.addAttribute("orden", orden);
+		
+	
 		return "Productos/carrito";
 	}
 	
