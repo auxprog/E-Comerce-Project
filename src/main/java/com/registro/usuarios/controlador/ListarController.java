@@ -86,7 +86,13 @@ public class ListarController {
 		detalleOrden.setTotal(producto.getPrecio() * cantidad);
 		detalleOrden.setProducto(producto);
 		
-		detalles.add(detalleOrden);
+		Long idProducto=producto.getId();
+		boolean ingresado=detalles.stream().anyMatch(p -> p.getProducto().getId()==idProducto);
+		
+		if (!ingresado) {
+			detalles.add(detalleOrden);
+		}
+		
 		
 		sumaTotal = detalles.stream().mapToDouble(dt -> dt.getTotal()).sum();
 		
