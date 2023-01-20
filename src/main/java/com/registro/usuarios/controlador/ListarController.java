@@ -141,6 +141,10 @@ public class ListarController {
 		return "Productos/carrito";
 	}
 	
+	@GetMapping(value="/order")
+	public String Rorden() {
+		return"Productos/resumenorden";
+	}
 	
 	
 }
