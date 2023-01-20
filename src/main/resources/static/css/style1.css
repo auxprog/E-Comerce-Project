@@ -1,0 +1,117 @@
+body {
+    
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#fff;
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+.vender{
+
+margin-left: 33%;
+
+}
+.vender .vender-{
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.product h2{
+	color:red;
+    font-size: 200%;
+ }
+
+/**/
+.container1{
+    background: rgba(74,74,74,0.31);
+background: -moz-linear-gradient(top, rgba(74,74,74,0.31) 0%, rgba(74,74,74,0.32) 0%, rgba(99,99,99,0.46) 15%, rgba(87,87,87,0.58) 29%, rgba(74,73,74,0.89) 63%, rgba(74,73,74,0.88) 64%, rgba(10,10,10,0.75) 73%, rgba(10,9,10,0.74) 74%, rgba(0,0,0,0.72) 75%, rgba(5,5,5,0.68) 78%, rgba(10,10,10,0.61) 83%, rgba(5,5,5,0.61) 83%, rgba(28,28,28,0.55) 87%, rgba(20,20,20,0.4) 98%, rgba(18,18,18,0.4) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(74,74,74,0.31)), color-stop(0%, rgba(74,74,74,0.32)), color-stop(15%, rgba(99,99,99,0.46)), color-stop(29%, rgba(87,87,87,0.58)), color-stop(63%, rgba(74,73,74,0.89)), color-stop(64%, rgba(74,73,74,0.88)), color-stop(73%, rgba(10,10,10,0.75)), color-stop(74%, rgba(10,9,10,0.74)), color-stop(75%, rgba(0,0,0,0.72)), color-stop(78%, rgba(5,5,5,0.68)), color-stop(83%, rgba(10,10,10,0.61)), color-stop(83%, rgba(5,5,5,0.61)), color-stop(87%, rgba(28,28,28,0.55)), color-stop(98%, rgba(20,20,20,0.4)), color-stop(100%, rgba(18,18,18,0.4)));
+background: -webkit-linear-gradient(top, rgba(74,74,74,0.31) 0%, rgba(74,74,74,0.32) 0%, rgba(99,99,99,0.46) 15%, rgba(87,87,87,0.58) 29%, rgba(74,73,74,0.89) 63%, rgba(74,73,74,0.88) 64%, rgba(10,10,10,0.75) 73%, rgba(10,9,10,0.74) 74%, rgba(0,0,0,0.72) 75%, rgba(5,5,5,0.68) 78%, rgba(10,10,10,0.61) 83%, rgba(5,5,5,0.61) 83%, rgba(28,28,28,0.55) 87%, rgba(20,20,20,0.4) 98%, rgba(18,18,18,0.4) 100%);
+background: -o-linear-gradient(top, rgba(74,74,74,0.31) 0%, rgba(74,74,74,0.32) 0%, rgba(99,99,99,0.46) 15%, rgba(87,87,87,0.58) 29%, rgba(74,73,74,0.89) 63%, rgba(74,73,74,0.88) 64%, rgba(10,10,10,0.75) 73%, rgba(10,9,10,0.74) 74%, rgba(0,0,0,0.72) 75%, rgba(5,5,5,0.68) 78%, rgba(10,10,10,0.61) 83%, rgba(5,5,5,0.61) 83%, rgba(28,28,28,0.55) 87%, rgba(20,20,20,0.4) 98%, rgba(18,18,18,0.4) 100%);
+background: -ms-linear-gradient(top, rgba(74,74,74,0.31) 0%, rgba(74,74,74,0.32) 0%, rgba(99,99,99,0.46) 15%, rgba(87,87,87,0.58) 29%, rgba(74,73,74,0.89) 63%, rgba(74,73,74,0.88) 64%, rgba(10,10,10,0.75) 73%, rgba(10,9,10,0.74) 74%, rgba(0,0,0,0.72) 75%, rgba(5,5,5,0.68) 78%, rgba(10,10,10,0.61) 83%, rgba(5,5,5,0.61) 83%, rgba(28,28,28,0.55) 87%, rgba(20,20,20,0.4) 98%, rgba(18,18,18,0.4) 100%);
+background: linear-gradient(to bottom, rgba(74,74,74,0.31) 0%, rgba(74,74,74,0.32) 0%, rgba(99,99,99,0.46) 15%, rgba(87,87,87,0.58) 29%, rgba(74,73,74,0.89) 63%, rgba(74,73,74,0.88) 64%, rgba(10,10,10,0.75) 73%, rgba(10,9,10,0.74) 74%, rgba(0,0,0,0.72) 75%, rgba(5,5,5,0.68) 78%, rgba(10,10,10,0.61) 83%, rgba(5,5,5,0.61) 83%, rgba(28,28,28,0.55) 87%, rgba(20,20,20,0.4) 98%, rgba(18,18,18,0.4) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a4a4a', endColorstr='#121212', GradientType=0 );
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+}
+/*video*/
+
+
+.container--{
+    position: relative;
+    height: 593px;
+   
+}
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.video-container video{
+    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+}
+
+.info h5{
+    margin: 0;
+    padding-top: 15px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.685);
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.info span{
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+}
+.header-{
+    margin-left: 30px;
+    margin-right: 30px;
+    background: white;
+}
+/**/
+.Style-of-newstittle{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.line{
+    margin-top: 5px;
+    border: solid 1px #4a4aee;
+    width: 100%;
+    margin-bottom: 5px;
+}
